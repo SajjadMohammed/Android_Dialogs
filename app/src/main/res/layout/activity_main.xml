@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+   <include layout="@layout/support_toolbar"/>
+
+   <Button
+       android:text="Default Dialog"
+       android:onClick="defaultDialog"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+   <Button
+       android:text="Themed Dialog"
+       android:onClick="themedDialog"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+   <Button
+       android:text="Custom Dialog"
+       android:onClick="customDialog"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+   <Button
+       android:text="List Dialog"
+       android:onClick="listDialog"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+
+
+   <ListView
+       android:id="@+id/checkedList"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" />
+
+</LinearLayout>
